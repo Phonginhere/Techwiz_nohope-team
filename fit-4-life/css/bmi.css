@@ -1,0 +1,226 @@
+#bang {
+  display: flex;
+  justify-content: left;
+}
+
+
+.forms {
+  background-color: #fff;
+  height: 240px;
+  width: 450px;
+  border-radius: 20px;
+  margin: 20px auto 100px auto;
+  display: block;
+  border: solid 1px #289df6;
+  box-shadow: 0 0 40px 0 #ddd;
+}
+
+.forms:hover {
+  box-shadow: 0 0 60px 0 #ccc;
+  transition: .4s;
+  transform: scale(1.02);
+}
+
+.row-ones {
+  padding: 20px;
+}
+
+.row-twos {
+  padding: 20px;
+}
+
+.text-inputs {
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #dbeffe;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.text-inputs:last-child {
+  margin-bottom: 35px;
+}
+
+.text-inputs:hover {
+  background-color: #cbe7fd;
+}
+
+#submit {
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 140px;
+  background-color: #289df6;
+  color: #fff;
+  margin: auto;
+  display: block;
+  outline: none;
+  cursor: pointer;
+}
+
+#submit:hover{
+  background-color: #0a8ef2;
+}
+
+.texts {
+  display: inline-block;
+  margin: 5px 20px 5px 12px;;
+}
+
+.row-ones {
+    display: flex;
+  padding: 30px 20px 15px 20px;
+}
+.row-twos {
+  padding: 15px 20px 30px 20px;
+}
+
+.containers {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.containers input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmarks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #dbeffe;
+  border-radius: 50%;
+}
+
+.containers:hover input ~ .checkmarks {
+  background-color: #cbe7fd;
+}
+
+.containers input:checked ~ .checkmarks {
+  background-color: #289df6;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #289df6;
+  padding-top: 15px;
+  display: block;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  padding: 15px;
+}
+
+h3 b {
+  font-size: 32px;
+  font-weight: 300;
+  color: #289df6;
+}
+
+.checkmarks:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containers input:checked ~ .checkmarks:after {
+  display: block;
+}
+
+.containers .checkmarks:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#form h1{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: #289df6;
+    padding-top: 15px;
+    display: block;
+  }
+  
+#form h2 {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.drophover {
+  display:inline-block;  
+  position:sticky;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  display:run-in;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: inline-block;}
+
+.bmiForm{
+    text-align: center;
+}
+
+.classes-timetable-spad {
+  padding-right: 13%;
+}
+
+#bmi1 {
+  display: none;
+}
+
+#bmi2 {
+  display: none;
+}
+#bmi3 {
+  display: none;
+}
+#bmi4 {
+  display: none;
+}

@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Gutim Template">
+  <meta name="keywords" content="Gutim, unica, creative, html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fit 4 Life</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Css Styles -->
+  <link rel="stylesheet" href="css/bmi.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+  <script src="js/validate-register-form.js"></script>
+  <script src="js/bmi.js"></script>
+
+  <!-- <script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script data-require="bootstrap@3.1.1" data-semver="3.1.1" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script data-require="angular.js@1.2.13" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular.js"></script> -->
+</head>
+
+<body>
+  <!-- Page Preloder -->
+  <div id="preloder">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Header Section Begin -->
+  <header class="header-section">
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+        <div class="nav-menu">
+            <nav class="mainmenu mobile-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li ><a href="./about-us.html">About</a></li>
+                    <li><a href="./classes.html">Classes</a></li>
+                    <li class="active"><a href="./bmi.html">BMI</a>
+                    <li><a href="./blog.html">Blog</a></li>                    
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+            <a href="./register.html" class="primary-btn signup-btn">Sign In</a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+</header>
+  <!-- Header End -->
+
+
+
+  <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb/classes-breadcrumb.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>Gallery</h2>
+                    <div class="breadcrumb-option">
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                        <span>Gallery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator</h3>
+  <form class="forms" id="form" onsubmit="return validateForm()">
+    <div class="row-ones">
+
+      <input type="text" class="text-inputs" id="age" autocomplete="off" required />
+      <p class="texts">Age</p>
+      <label class="containers">
+        <input type="radio" name="radio" id="f">
+        <p class="texts">Female</p>
+        <span class="checkmarks"></span>
+      </label>
+      <label class="containers">
+        <input type="radio" name="radio" id="m">
+        <p class="texts">Male</p>
+        <span class="checkmarks"></span>
+      </label>
+    </div>
+
+    <div class="row-twos">
+      <input type="text" class="text-inputs" id="height" autocomplete="off" required>
+      <p class="texts">Height (cm)</p>
+      <input type="text" class="text-inputs" id="weight" autocomplete="off" required>
+      <p class="texts">Weight (kg)</p>
+    </div>
+    <button id="submit" onclick="validateForm()">Submit</button>
+    <h1 id="h1" style="margin-top: 5%;"></h1>>
+    <h2 id="h2"></h2>
+  </form>
+
+
+  <!--bảng 1: Underweight -->
+  <div class="bmiForm" id="bmi1">
+    <h4>Advise for your BMI number</h4>
+    <h3>Your diet plan</h3>
+    
+    
+    
+    <section class="classes-timetable-spad">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="schedule-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="workout-time">Breakfast</td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 35;">
+                      <div class="drophover">
+                        <h6>Almonds (soaked)</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Alternatives: A bowl of noodles with roasted pork, 1 cup of milk</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 34;">
+                      <div class="drophover">
+                        <h6>Banana milkshake</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">1 cup of fresh milk, 1 bowl of plain rice noodles</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 33;">
+                      <div class="drophover">
+                        <h6>Vegetable oats</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">2 slice of bread, 2 sunny-side-up eggs, 1 cup of fresh milk, 1 banana</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 32;">
+                      <div class="drophover">
+                        <h6>Vegetable daliya</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">1 bowl of salad with beef, 1 cup of hot milk</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 31;">
+                      <div class="drophover">
+                        <h6>Multigrain bread</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">A bowl of noodles with roasted pork, 1 cup of fruit juice</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 30;">
+                      <div class="drophover">
+                        <h6>Wheat bean flakes</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">A bowl of noodles with plain pork, 1 cup of milk, 1 banana</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 29;">
+                      <div class="drophover">
+                        <h6>Tofu, Paneer</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <p>A bowl of noodles with beef (200 grams), 1 hot cup of milk, 2 bananas </a>
+                        <p><img src="./img/logo.png" alt=""></a>  
+                        <p>Ăn chuối nào</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="workout-time">Lunch</td>
+
+                    
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 28;">
+                      <div class="drophover">
+                        <h6>Chapatti</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">2 rice bowls, 1 grilled red tilapia, 1 bowl of vegetables, 1 banana</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 27;">
+                      <div class="drophover">
+                        <h6>Plain pork with vegetables</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">2 bowls of rice, 200 grams of chicken breast</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 26;">
+                      <div class="drophover">
+                        <h6>Roasted chana</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Chapatti, vegetables, paneer</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 25;">
+                      <div class="drophover">
+                        <h6>Bhelpuri</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Vegetable soup, banana milkshake, a grilled beef</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 24;">
+                      <div class="drophover">
+                        <h6>Upma</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">2 rice bowls, cabbage soup with beef, 1 sice of papaya</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 23;">
+                      <div class="drophover">
+                        <h6>Grilled sandwich</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">1 sapache, fried beef with mushrooms</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 22;">
+                      <div class="drophover">
+                        <h6>Gym</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <p>1 bowl of rice, roasted pork with broccoli</a>
+                        <p><img src="./img/logo.png" alt=""></a>  
+                        <p>Ăn chuối nào</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="workout-time">Dinner</td>
+
+                    
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 21;">
+                      <div class="drophover">
+                        <h6>1 bowl of plain beef with roasted vegetables</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Cup of oat, 1 salad, 1 cup of milk</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 20;">
+                      <div class="drophover">
+                        <h6>1 bowl of tofu stuffed with pork</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">1 bowl of pumpkin soup, vegetables. A cup of hot milk before sleep</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 19;">
+                      <div class="drophover">
+                        <h6>Noodles</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">1 bowl of chicken soup</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 18;">
+                      <div class="drophover">
+                        <h6>Roasted chicken with ginger</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Roasted prawns with chilli</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 17;">
+                      <div class="drophover">
+                        <h6>1 bowl of beef soup with broccoli</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">1 banana, 2 bowls of rice, plain pork</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 16;">
+                      <div class="drophover">
+                        <h6>Any kind of fish</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">1 bowl of tomato soup with pork and mushrooms</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 15;">
+                      <div class="drophover">
+                        <h6>Curd</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <p>Sweet dish, roasted chana</a>
+                        <p><img src="./img/logo.png" alt=""></a>  
+                        <p>Ăn chuối nào</a>
+                      </div>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    </section>
+    <h2>
+      Doctor's Advises:
+    </h2>
+    <li><a href="https://www.nhs.uk/live-well/healthy-weight/advice-for-underweight-adults/">https://www.nhs.uk/live-well/healthy-weight/advice-for-underweight-adults/</a></li>
+    <li><a href="https://familydoctor.org/healthy-ways-to-gain-weight-if-youre-underweight/">https://familydoctor.org/healthy-ways-to-gain-weight-if-youre-underweight/</a></li>
+
+    <h3>workouts</h3>
+    <!--nhúng video tập luyện tại đây!!!-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zlyqr9bNs1E" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+
+  </div>
+
+  <!--bảng 1: Overweight -->
+  <div class="bmiForm" id="bmi2">
+    <h4>Advise for your BMI number</h4>
+    <h3>Your diet plan</h3>
+    
+    
+    
+    <section class="classes-timetable-spad">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="schedule-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="workout-time">Breakfast</td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 35;">
+                      <div class="drophover">
+                        <h6>PB+JSmoothie</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">No Alternatives</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 34;">
+                      <div class="drophover">
+                        <h6>2 hard-boiled eggs</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">an orange</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 33;">
+                      <div class="drophover">
+                        <h6>PB+JSmoothie</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">No Alternatives</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 32;">
+                      <div class="drophover">
+                        <h6>2 hard-boiled eggs</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">an orange</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 31;">
+                      <div class="drophover">
+                        <h6>Greek Yogurt</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Berries, Nuts and Honey</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 30;">
+                      <div class="drophover">
+                        <h6>Steamed Asparagus</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Poached Eggs</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 29;">
+                      <div class="drophover">
+                        <h6>Chorizo Breakfast Bowls</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <p>No Alternatives</a>
+                        <p><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="workout-time">Lunch</td>
+
+                    
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 28;">
+                      <div class="drophover">
+                        <h6>Open Faced Tuna Sandwich </h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Acovado</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 27;">
+                      <div class="drophover">
+                        <h6>Open Faced Tuna Sandwich</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Acovado</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 26;">
+                      <div class="drophover">
+                        <h6>Open Faced Tuna Sandwich </h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Acovado</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 25;">
+                      <div class="drophover">
+                        <h6>LEFTOVER Chicken Pot Pie Soup</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Garlic Cheddar Biscuit</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 24;">
+                      <div class="drophover">
+                        <h6>LEFTOVER Chicken Pot Pie Soup</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Garlic Cheddar Biscuit</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 23;">
+                      <div class="drophover">
+                        <h6>Asian Chicken Lettuce Wrap</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Chopped Salad</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 22;">
+                      <div class="drophover">
+                        <h6>Chickpea Avocado Salad</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <p>No Alternatives</a>
+                        <p><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="workout-time">Dinner</td>
+
+                    
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 21;">
+                      <div class="drophover">
+                        <h6>Spring Asparagus Risotto</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with 2 cups arugula and 1 tablespoon light balsamic vinaigrette</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 20;">
+                      <div class="drophover">
+                        <h6>Healthy Cod Fish</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Instant Pot Refried Beans</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 19;">
+                      <div class="drophover">
+                        <h6>Chicken Pot Pie Soup</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with 1 Garlic Cheddar Biscuit</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 18;">
+                      <div class="drophover">
+                        <h6>Pork Choops</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Dijon Herb Sauce and a Baked Sweet Potato</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 17;">
+                      <div class="drophover">
+                        <h6>Shrimp Fajita Bowls</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">No Alternatives</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 16;">
+                      <div class="drophover">
+                        <h6>DINNER OUT!</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">No Alternatives</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 15;">
+                      <div class="drophover">
+                        <h6>Baked Chicken Parmesan</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <p>with Broccoli and Orzo</a>
+                        <p><img src="./img/logo.png" alt=""></a>  
+                        <p>Ăn chuối nào</a>
+                      </div>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    </section>
+    <h2>
+      Doctor's Advises:
+    </h2>
+    <li><a href="https://www.eatthis.com/doctors-weight-loss/">https://www.eatthis.com/doctors-weight-loss/</a></li>
+    <li><a href="https://healthland.time.com/2013/02/12/doctors-advice-about-obesity-its-personal/">https://healthland.time.com/2013/02/12/doctors-advice-about-obesity-its-personal/</a></li>
+
+    <h3>workouts</h3>
+    <!--nhúng video tập luyện tại đây!!!-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/f4ploouAfWI" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+
+  </div>
+
+  <!--Bảng 2 healthy -->
+  <div class="bmiForm" id="bmi3">
+    <h4>Advise for your BMI number</h4>
+    <h3>Your diet plan</h3>
+    
+    
+    <section class="classes-timetable-spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="schedule-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="workout-time">Breakfast</td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 35;">
+                      <div class="drophover">
+                        <h6>Egg Tomato</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">and Scallicon Sandwich and an orange</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 34;">
+                      <div class="drophover">
+                        <h6>Egg Tomato</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">and Scallicon Sandwich and an banana</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 33;">
+                      <div class="drophover">
+                        <h6>Egg Tomato</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">and Scallicon Sandwich and an banana</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 32;">
+                      <div class="drophover">
+                        <h6>Greek Yogurt</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Berries, Nuts and Honey</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 31;">
+                      <div class="drophover">
+                        <h6>Greek Yogurt</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Berries, Nuts and Honey</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 30;">
+                      <div class="drophover">
+                        <h6>Instant Pot Steel Cut Oats</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">No Alternatives</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 29;">
+                      <div class="drophover">
+                        <h6>LEFTOVER Instant Pot Steel Cut Oats</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <p>No Alternatives</a>
+                        <p><img src="./img/logo.png" alt=""></a>  
+                        <p>Ăn chuối nào</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="workout-time">Lunch</td>
+
+                    
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 28;">
+                      <div class="drophover">
+                        <h6>Ranch Chicken Salad</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">in &#189; an avocado</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 27;">
+                      <div class="drophover">
+                        <h6>Ranch Chicken Salad</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">in &#189; an avocado</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 26;">
+                      <div class="drophover">
+                        <h6>Ranch Chicken Salad</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">over 2 cups Romanie lettuce</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 25;">
+                      <div class="drophover">
+                        <h6>The Skinnny Tuna Melt</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with 8 carrot sticks and 2 generous tablespoons LEFTOVER light rank dressing</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 24;">
+                      <div class="drophover">
+                        <h6>The Skinnny Tuna Melt</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <p>with 8 carrot sticks and 2 generous tablespoons LEFTOVER light rank dressing</a>
+                        <p><img src="./img/logo.png" alt=""></a>  
+                        <p>Ăn chuối nào</a>
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 23;">
+                      <div class="drophover">
+                        <h6>Beef, Tomato and Acini di Pepe Soup</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">No Alternatives</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 22;">
+                      <div class="drophover">
+                        <h6>Summer Pasta Salad</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Baby Greens</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                  
+
+                  </tr>
+
+                  <tr>
+                    <td class="workout-time">Dinner</td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 21;">
+                      <div class="drophover">
+                        <h6>Houston's Veggie Burger</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <p>No Alternatives</a>
+                        <p><img src="./img/logo.png" alt=""></a>  
+                        <p>Ăn chuối nào</a>
+                      </div>
+                    </td>
+                    
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 20;">
+                      <div class="drophover">
+                        <h6>Tzatziki Fish Tacos</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Easy Cucumber Salad</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 19;">
+                      <div class="drophover">
+                        <h6>Chicken Soup with Spinach</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">and Whole Wheat Acini di Pepe with 2 Easy Garlic Knots</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 18;">
+                      <div class="drophover">
+                        <h6>Fettuccini </h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Winter Greens and Poached Egg(recipe x 2)</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 17;">
+                      <div class="drophover">
+                        <h6>Shrimp Scampi</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with Broccoli Orzo</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 16;">
+                      <div class="drophover">
+                        <h6>Order In!</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">No Alternatives</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 15;">
+                      <div class="drophover">
+                        <h6>Italian Beef and Spinach MeatBalls</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">with 1 cup whole wheat rotini and 2 cups Romanine lettuce with 1 &#189; tablespoons Skinny Caesar Dressing</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                   
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h2>
+      Doctor's Advises:
+    </h2>
+    <li><a href="https://patient.info/doctor/healthy-diet-and-enjoyable-eating">https://patient.info/doctor/healthy-diet-and-enjoyable-eating</a></li>
+    <li><a href="https://www.eatthis.com/doctors-best-health-tips/">https://www.eatthis.com/doctors-best-health-tips/</a></li>
+
+    <h3>workouts</h3>
+    <!--nhúng video tập luyện tại đây!!!-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/McgECL_uPTg" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+
+  </div>
+
+  <!--Bảng 4 tại đây: obese-->
+  <div class="bmiForm" id="bmi4">
+    <h4>Advise for your BMI number</h4>
+    <h3>Your diet plan</h3>
+    
+    
+    <section class="classes-timetable-spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="schedule-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="workout-time">Breakfast</td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 35;">
+                      <div class="drophover">
+                        <h6>Water</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Coffee</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 34;">
+                      <div class="drophover">
+                        <h6>Western Omelette</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Green apple</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 33;">
+                      <div class="drophover">
+                        <h6>Water</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Coffee</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 32;">
+                      <div class="drophover">
+                        <h6>All-Bran Buds with milk</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Mixed berries</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 31;">
+                      <div class="drophover">
+                        <h6>Water</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Coffee</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 30;">
+                      <div class="drophover">
+                        <h6>Two eggs</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <p>Strawberries, 2 medium-sized sausages</a>
+                        <p><img src="./img/logo.png" alt=""></a>    
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 29;">
+                      <div class="drophover">
+                        <h6>Water</h6>
+                        <span>7.00 - 8.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                      <p>Coffee</a>
+                      <p><img src="./img/logo.png" alt=""></a>
+                        <p>Ăn chuối nào</a>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="workout-time">Lunch</td>
+
+                    
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 28;">
+                      <div class="drophover">
+                        <h6>Green tea</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Water, 1 cup of vegetable broth</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 27;">
+                      <div class="drophover">
+                        <h6>Arugula salad with walnuts</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Slices of pear, goat cheese</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 26;">
+                      <div class="drophover">
+                        <h6>Green tea</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Water, 1 cup of vegetable broth</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 25;">
+                      <div class="drophover">
+                        <h6>Ginger chicken</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Lettuce cups, stir-fried vegetables</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 24;">
+                      <div class="drophover">
+                        <h6>Green tea</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Water, 1 cup of vegetable broth</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 23;">
+                      <div class="drophover">
+                        <h6>Baby spinach</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">lentil salad</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 22;">
+                      <div class="drophover">
+                        <h6>Green tea</h6>
+                        <span>10.00 - 11.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Water, 1 cup of vegetable broth</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>  
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="workout-time">Dinner</td>
+
+                    
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="gym" style="z-index: 21;">
+                      <div class="drophover">
+                        <h6>Water</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Green tea + No desert</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                                       
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 20;">
+                      <div class="drophover">
+                        <h6>Asian grilled pork belly</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Baby bok choy stir-fry + no desert</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 19;">
+                      <div class="drophover">
+                        <h6>Water</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Green tea + No desert</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 18;">
+                      <div class="drophover">
+                        <h6>Indian chicken</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Cauliflower, Green salad + no desert</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 17;">
+                      <div class="drophover">
+                        <h6>Water</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Green tea + No desert</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 16;">
+                      <div class="drophover">
+                        <h6>Peppered steak</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Asparagus + No desert</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+
+                    <td class="dropdown hover-bg ts-item" data-tsmeta="yoga" style="z-index: 15;">
+                      <div class="drophover">
+                        <h6>Water</h6>
+                        <span>18.00 - 19.00</span>
+                      </div>
+                      <div class="dropdown-content">
+                        <a href="#">Green tea + No desert</a>
+                        <a href="#"><img src="./img/logo.png" alt=""></a>  
+                      </div>
+                    </td>
+                  </tr>                  
+                </tbody>                
+              </table>              
+            </div>            
+          </div>          
+        </div>        
+      </div>
+    </section>
+    <h2>
+      Doctor's Advises:
+    </h2>
+    <li><a href="https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/treatment">https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/treatment</a></li>
+    <li><a href="https://www.nhs.uk/conditions/obesity/treatment/">https://www.nhs.uk/conditions/obesity/treatment/</a></li>
+
+    <h3>workouts</h3>
+    <!--nhúng video tập luyện tại đây!!!-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Co2UD3sVb0A" 
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+
+  </div>
+ <!-- Footer Banner Section Begin -->
+ <section class="footer-banner">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-6">
+              <div class="footer-banner-item set-bg" data-setbg="img/footer-banner/footer-banner-1.jpg">
+                  <span>New member</span>
+                  <h2>7 days for free</h2>
+                  <p>Complete the training sessions with us, surely you will be happy <i class="fa fa-heart"
+                          aria-hidden="true"></i></p>
+                  <div class="box-3">
+                      <a href="#" class="btn btn-three">
+                          <span>Get Started</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="footer-banner-item set-bg" data-setbg="img/footer-banner/footer-banner-2.jpg">
+                  <span>Contact us</span>
+                  <h2>0165 744 9675</h2>
+                  <p>If you trust us on your journey, our gym will not disappoint you!</p>
+                  <div class="box-3">
+                      <a href="#" class="btn btn-three">
+                          <span>Get Started</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Footer Banner Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="contact-option">
+                  <span>Phone</span>
+                  <table>
+                      <tr>
+                          <th><a href="tel:+84969406652">(84) 969 40 6652</a> - </th>
+                          <th><a href="tel:+841657449675">(84) 165 744 9675</a></th>
+                      </tr>
+                  </table>
+                  <!--<p>(84) 118 9999 - (123) 118 9999</p>-->
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="contact-option">
+                  <span>Address</span>
+                  <p>285 Doi Can, Ba Dinh district, Ha Noi</p>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="contact-option">
+                  <div><span>Email</span></div>
+                  <a href="mailto:eprojectaptech20@gmail.com">eprojectaptech20@gmail.com</a>
+                  <!--<p>contactcompany@Gutim.com</p>-->
+              </div>
+          </div>
+      </div>
+      <div class="subscribe-option set-bg" data-setbg="img/footer-signup.png">
+          <div class="so-text">
+              <h4>Subscribe To Our Mailing List</h4>
+              <p>Sign up to receive the latest information </p>
+          </div>
+          <form class="subscribe-form">
+              <input type="text" placeholder="Enter Your Mail">
+              <button type="button"><i class="fa fa-send"></i></button>
+          </form>
+      </div>
+
+      <div class="copyright-text">
+          <table>
+              <tr>
+                  <th>
+                      <ul>
+                          <li><a href="#">Term&Use </a></li>
+                          <li><a href="#">| &nbsp&nbsp&nbsp&nbsp Privacy Policy &nbsp&nbsp&nbsp&nbsp|</a></li>
+                      </ul>
+                      <div class="footer-social">
+                          <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                          <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+                          <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                      </div>
+                  </th>
+              </tr>
+              <tr>
+                  <th>
+                      <p>
+                          Copyright &copy;
+                          <script>document.write(new Date().getFullYear());</script> All rights reserved |This
+                          project is made from <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                              href="https://scontent.fhph1-1.fna.fbcdn.net/v/t1.15752-0/p261x260/174202425_145698197436071_5916083209206730926_n.png?_nc_cat=104&ccb=1-3&_nc_sid=ae9488&_nc_ohc=VfBHI927aUgAX_fFn1X&_nc_ht=scontent.fhph1-1.fna&tp=30&oh=392c877b74c2ce8ae16e22d341025a53&oe=60AACB0D"
+                              target="_blank">Lion Kings</a>
+                      </p>
+                  </th>
+              </tr>
+          </table>
+      </div>
+      <div id="top-up"><i class="fa fa-angle-double-up"></i></div>
+  </div>
+  </div>
+</footer>
+<!-- Footer Section End -->
+
+  <!-- Js Plugins -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/jquery.slicknav.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/top-up.js"></script>
+</body>
+
+</html>
