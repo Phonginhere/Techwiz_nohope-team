@@ -13,10 +13,6 @@ balance of nutrition, exercise, activity, and rest.
 
 The proposed Website will be titled Fit4Life and should help individuals with fitness
 programs and diet plans.
-#
-#
-#
-#
 
 For more awesome templates please visit https://colorlib.com/wp/templates/
 
@@ -25,4 +21,4 @@ More information about the license is available here: https://colorlib.com/wp/li
 
 Removing copyright information without the license will result in suspension of your hosting and/or domain name(s). [1]
 
-References [1]: Fit-for-life - Quan-zuize: <a href="https://github.com/Quan-zuize/Fit-for-life">Here!</a>
+## References [1]: Fit-for-life - Quan-zuize: <a href="https://github.com/Quan-zuize/Fit-for-life">Here!</a>
